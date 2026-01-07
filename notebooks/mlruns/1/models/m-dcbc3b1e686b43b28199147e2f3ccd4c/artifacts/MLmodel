@@ -1,0 +1,21 @@
+artifact_path: "file:///c:/Users/90546/OneDrive/Masa\xFCst\xFC/projects/res/notebooks/mlruns/1/models/m-dcbc3b1e686b43b28199147e2f3ccd4c/artifacts"
+flavors:
+  lightgbm:
+    code: null
+    data: model.pkl
+    lgb_version: 4.6.0
+    model_class: lightgbm.sklearn.LGBMRegressor
+  python_function:
+    data: model.pkl
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.lightgbm
+    python_version: 3.12.1
+mlflow_version: 3.8.0
+model_id: m-dcbc3b1e686b43b28199147e2f3ccd4c
+model_size_bytes: 383733
+model_uuid: m-dcbc3b1e686b43b28199147e2f3ccd4c
+prompts: null
+run_id: 03c59f68601f4c3cbb862de727e6df88
+utc_time_created: '2025-12-22 19:22:55.803698'

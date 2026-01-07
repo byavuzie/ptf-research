@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  # Bizim Veritabanı Servisimiz
+  db:
+    image: postgres:15              # PostgreSQL'in 15. sürümünü kullan
+    container_name: energy_db       # Konteynerin (Kutunun) adı bu olsun
+    environment:
+      POSTGRES_USER: baran          # Kullanıcı adı
+      POSTGRES_PASSWORD: baran123   # Şifre
+      POSTGRES_DB: energy_db        # Veritabanı ismi
+    ports:
+      - "5432:5432"                 # Bilgisayarın 5432 portunu bu kutuya bağla
+    volumes:
+      - postgres_data:/var/lib/postgresql/data # Veriler bilgisayar kapansa da silinmesin
+    restart: always                 # Bir hata olursa otomatik yeniden başlat
+
+volumes:
+  postgres_data:
